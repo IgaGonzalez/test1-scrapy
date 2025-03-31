@@ -87,8 +87,9 @@ The project settings are defined in `test1/settings.py`. Key configurations incl
 
 Ensure `scrapy-playwright` is installed and configured in the settings:
 ```python
-DOWNLOADER_MIDDLEWARES = {
-    'scrapy_playwright.middleware.PlaywrightMiddleware': 543,
+DOWNLOAD_HANDLERS = {
+    "http": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
+    "https": "scrapy_playwright.handler.ScrapyPlaywrightDownloadHandler",
 }
 ```
 

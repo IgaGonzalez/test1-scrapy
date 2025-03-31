@@ -18,7 +18,7 @@ PLAYWRIGHT_LAUNCH_OPTIONS = {
 }
 
 # Optional: Set logging and feed exports
-LOG_LEVEL = "DEBUG"
+LOG_LEVEL = "INFO"
 FEEDS = {
     "jobs.jsonl": {"format": "jsonlines"},
 }
